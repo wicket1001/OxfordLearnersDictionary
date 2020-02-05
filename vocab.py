@@ -2,6 +2,7 @@
 
 import requests
 import re
+import json
 
 
 PATTERN_CATEGORY = re.compile(r'href="(.*?)">(.*?)<')
@@ -92,11 +93,14 @@ def get_definition(link, category):
             if cat == category:
                 pd1 = li.find('class="def"')
                 pd1 = li.find('>', pd1)
-                pd2 = li.find('</span></span>', pd1)
-                #print(li)
+                pd2 = min(
+                    li.find('</span></span>', pd1) if li.find('</span></span>', pd1) != -1 else 10000,
+                    li.find('</span><span class="topic-g">', pd1) if li.find('</span><span class="topic-g">', pd1) != -1 else 10000,
+                    li.find('</span><ul class="examples"', pd1) if li.find('</span><ul class="examples"', pd1) != -1 else 10000
+                )
                 definition = li[pd1 + 1:pd2].strip()
-                #definition = re.sub(r'<.*?>', '', definition)
-                print(definition)
+                definition = re.sub(r'<.*?>', '', definition)
+                print(link, definition)
         if pos == -1:
             break
         lpos = pos
@@ -105,12 +109,17 @@ def get_definition(link, category):
 
 if __name__ == '__main__':
     get_categories()
-    for cat_name, cat in CATEGORIES.items():
-        print(f'{cat_name}:')
-        for topic_name, topic in cat['topics'].items():
-            print(f'  {topic_name}:')
-            for sl_name, sl in topic['sublists'].items():
-                print(f'    {sl["title"]}:')
-                for vocab in sl['vocabs']:
-                    print(f'      {vocab["vocab"]}')
+    with open('test2.txt', 'w+') as f:
+        for cat_name, cat in CATEGORIES.items():
+            f.write(f'{cat_name}:\n')
+            for topic_name, topic in cat['topics'].items():
+                f.write(f'    {topic_name}:\n')
+                for sl_name, sl in topic['sublists'].items():
+                    f.write(f'        {sl["title"]}:\n')
+                    for vocab in sl['vocabs']:
+                        f.write(f'            {vocab["vocab"]} -- {vocab["definition"]}\n')
+        f.flush()
+    with open('test3.json', 'w+') as f:
+        json.dump(CATEGORIES, f)
+
 
