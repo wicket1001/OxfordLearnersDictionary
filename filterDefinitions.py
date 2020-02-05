@@ -1,7 +1,7 @@
 import re as re
 
 index = 'terrorism'
-file = 'war_and_conflict.html'
+file = 'in/war_and_conflict.html'
 
 out = file + '-' + index + '.csv'
 #pattern = '\"/definition/english/.*?\">.*?<'
