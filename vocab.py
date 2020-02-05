@@ -6,6 +6,7 @@ import re
 
 PATTERN_CATEGORY = re.compile(r'href="(.*?)">(.*?)<')
 PATTERN_SUBLIST = re.compile(r'<a href="(.*?)">(.*?)</a>')
+PATTERN_VOCAB = re.compile(r'<li id="(.*?)" data-hw="(.*?)" data-(.*?)_t="(.*?)">\s*<a href="(.*?)">(.*?)</a><span class="pos">(.*?)</span><div><span class="belong-to">(.*)</span>')
 BASE_URL = 'https://www.oxfordlearnersdictionaries.com'
 LINK_TOPIC = '/topic/'
 
@@ -21,9 +22,11 @@ def get_categories():
         if pos == -1:
             break
         m = PATTERN_CATEGORY.finditer(r.text[pos:pos+200]).__next__()
-        categories[m.group(2).strip()] = {'path': m.group(1)[len(BASE_URL):]}
+        categories[m.group(2).strip()] = {'path': m.group(1)[len(BASE_URL):], 'topics': {}}
     global CATEGORIES
     CATEGORIES = categories
+    for name, obj in CATEGORIES.items():
+        get_topics(name)
     return categories
 
 
@@ -36,20 +39,42 @@ def get_topics(category):
         p2 = r.text.find('</a>\n                                    </div>', pos)
         if pos == -1:
             break
-        m = PATTERN_CATEGORY.finditer(r.text[pos:p2]).__next__()
-        c = m.group(2).strip()
-        topics[c] = {'path': m.group(1)[len(BASE_URL):], 'sublists': {}}
+        m = PATTERN_CATEGORY.findall(r.text[pos:p2])[0]
+        c = m[1].strip()
+        topics[c] = {'title': m[1].strip(), 'path': m[0][len(BASE_URL):], 'sublists': {}}
         for m in PATTERN_SUBLIST.finditer(r.text[pos:p2 + 10]):
-            topics[c]['sublists'][m.group(2).strip()] = {'path': m.group(1)}
+            sl = m.group(1)[len(BASE_URL):]
+            sl = sl[sl.find('=') + 1:sl.rfind('_')]
+            topics[c]['sublists'][sl] = {'title': m.group(2).strip(), 'path': m.group(1)[len(BASE_URL):], 'vocabs': {}}
+    CATEGORIES[category]['topics'] = topics
+    for name, obj in CATEGORIES[category]['topics'].items():
+        get_vocabs(category, name)
     return topics
+
+
+def get_vocabs(category, topic):
+    r = requests.get(f'{BASE_URL}{CATEGORIES[category]["topics"][topic]["path"]}')
+    p1 = r.text.find('top-g')
+    p2 = r.text.find('</ul>', p1)
+    t = r.text[p1:p2]
+    lpos = 0
+    pos = 0
+    while True:
+        pos = t.find('</li>', pos + 1)
+        if pos == -1:
+            break
+        m = PATTERN_VOCAB.findall(t[lpos:pos])[0]
+        print(m)
+        CATEGORIES[category]['topics'][topic]['sublists'][m[2]]['vocabs'] = {
+            'vocab': m[5],
+            'type': m[6],
+            'definition': m[4],
+            'level': m[6]
+        }
+        lpos = pos
 
 
 if __name__ == '__main__':
     get_categories()
-    for name, url in CATEGORIES.items():
-        print(name)
-        t = get_topics(name)
-        for n, u in t.items():
-            print(f'  {n}')
-            for n2, u2 in u['sublists'].items():
-                print(f'    {n2}')
+    print(CATEGORIES)
+
