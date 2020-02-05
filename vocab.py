@@ -67,10 +67,40 @@ def get_vocabs(category, topic):
         CATEGORIES[category]['topics'][topic]['sublists'][m[2]]['vocabs'].append({
             'vocab': m[5],
             'type': m[6],
-            'definition': m[4],
+            'definitionLink': m[4],
+            'definition': get_definition(m[4], category),
             'level': m[6]
         })
         lpos = pos
+
+
+def get_definition(link, category):
+    r = requests.get(f'{BASE_URL}{link}')
+    p1 = r.text.find('<ol')
+    p2 = r.text.find('</ol>', p1)
+    t = r.text[p1:p2]
+    lpos = 0
+    pos = 0
+    while True:
+        pos = t.find('<li class="sense"', pos + 1)
+        li = t[lpos:pos]
+        pt1 = li.find('topic_name')
+        if pt1 != -1:
+            pt1 = li.find('>', pt1)
+            pt2 = li.find('<', pt1)
+            cat = li[pt1 + 1:pt2].strip()
+            if cat == category:
+                pd1 = li.find('class="def"')
+                pd1 = li.find('>', pd1)
+                pd2 = li.find('</span></span>', pd1)
+                #print(li)
+                definition = li[pd1 + 1:pd2].strip()
+                #definition = re.sub(r'<.*?>', '', definition)
+                print(definition)
+        if pos == -1:
+            break
+        lpos = pos
+    return None
 
 
 if __name__ == '__main__':
