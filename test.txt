@@ -1,0 +1,575 @@
+Animals
+  Animals
+    Animal behaviour
+    Animal homes
+    Animals in general
+    Dogs
+    Farm animals
+    Groups of animals
+    Parts of animals
+    Pets
+    Reptiles and amphibians
+    Wild mammals
+    Working animals
+  Birds
+    Bird behaviour
+    Bird homes
+    Birds
+    Parts of birds
+  Fish and shellfish
+    Fish
+    Other sea creatures
+    Parts of fish
+    Shellfish
+  Insects, worms, etc.
+    Insect behaviour
+    Insect forms
+    Insect homes
+    Insects
+    Other invertebrates
+    Parts of insects
+    Spiders, etc.
+    Worms
+Appearance
+  Appearance
+    Attractiveness
+    Beauty products
+    Body shape
+    Describing hair
+    Facial expressions
+    Facial hair
+    Posture and movement
+    Skin
+    Styling hair
+  Body
+    Face
+    Hands and feet
+    Inside the body
+    Mouth and teeth
+    Parts of the body
+    Skeleton and muscles
+  Clothes and Fashion
+    Accessories
+    Describing clothes
+    Footwear
+    Hats
+    Items of clothing
+    Jewellery
+    Parts of clothing
+    The fashion world
+    Wearing clothes
+  Colours and Shapes
+    Colours
+    Shapes
+Communication
+  Language
+    Features of language
+    Grammar
+    Language skills
+    Languages
+    Phonetics
+    Punctuation
+  Phones, email and the internet
+    Communication devices
+    Email
+    Making calls
+    Phone services
+    Social media
+    Text messages
+    Using the internet
+    Websites
+Culture
+  Art
+    Art equipment
+    Artwork and techniques
+    Describing art
+    Styles of art
+    The art world
+  Film and theatre
+    Elements of a play or film
+    Film reviews and promotion
+    Film-making equipment
+    In the theatre
+    Making films
+    People in film and theatre
+    Producing a play
+    Showing films
+    Types of film
+    Types of play
+  Literature and writing
+    Characters in a story
+    Describing a story
+    Elements of a story
+    Parts of a book
+    People in publishing
+    Poetry
+    Types of story
+    Types of text
+    Writing and publishing
+  Music
+    Describing music
+    Listening to music
+    Live music
+    Musical instruments
+    People in the music world
+    Pieces of music
+    Producing music
+    Reading music
+    Styles of music
+  TV, radio and news
+    Broadcasting
+    Celebrity news
+    Journalism
+    Media people
+    TV and radio shows
+    The press
+    Watching TV/Listening to the radio
+Food and drink
+  Cooking and eating
+    At the dining table
+    Diet
+    Eating out
+    Kitchen equipment
+    Meals
+    Preparing food
+    Restaurant people
+    Taste and texture of food
+    Types of restaurant
+  Drinks
+    Alcoholic drinks
+    Drinking
+    Non-alcoholic drinks
+    Preparing drinks
+  Food
+    Carbohydrates
+    Dairy and fats
+    Fruit and nuts
+    Herbs and spices
+    Meat, fish and seafood
+    Sauces
+    Savoury dishes
+    Sweets and desserts
+    Vegetables
+Functions
+  Discussion and agreement
+    Agreement
+    Discussion
+    Ending an agreement
+    Mediation
+    Persuasion
+    Working together
+  Doubt, guessing and certainty
+    Certainty
+    Doubt
+    Guessing
+    Possibility
+    Probability
+  Opinion and argument
+    Expressing agreement
+    Expressing an opinion
+    Expressing disagreement
+    Forming an opinion
+    Having a disagreement
+    Making an argument
+    Matching
+    Not matching
+  Permission and obligation
+    Allowed
+    Must
+    Not allowed
+    Rules
+  Preferences and decisions
+    Decide
+    Dislike
+    Like
+    Prefer
+  Suggestions and advice
+    Advice
+    Recommendation
+    Suggestion
+Health
+  Health and Fitness
+    Exercise
+    Good health
+  Illness
+    Addiction
+    Being ill
+    Injuries
+    Mental and emotional problems
+    Poor health
+    Recovering from illness
+    Types of illness
+  Medicine
+    Complementary medicine
+    Healthcare
+    Hospitals
+    Medical equipment
+    Medical examinations
+    Medical staff
+    Mental health care
+    Operations
+Homes and buildings
+  Buildings
+    Architectural features
+    Architectural styles
+    Building location
+    Construction
+    Describing buildings
+    Historic buildings
+    Parts of a building
+    Public buildings
+    Religious buildings
+    Types of building
+  Gardens
+    Gardening
+    In the garden
+  Houses and homes
+    Buying a home
+    Furniture
+    House equipment
+    Housework
+    Interior décor
+    Parts of a house
+    Renting a home
+    Rooms in a house
+    Types of house
+Leisure
+  Games and toys
+    Ball games
+    Board games
+    Card games
+    Children's games
+    Computer games
+    Games in general
+    Indoor games
+    Toys
+  Hobbies
+    Activities and interests
+    Crafts and skills
+  Shopping
+    Departments in stores
+    Online shopping
+    Paying for shopping
+    Shopping in stores
+    Types of store
+Notions
+  Change, cause and effect
+    Cause and effect
+    Change
+  Danger
+    Dangerous people/things
+    Involving danger
+    Preventing danger
+  Difficulty and failure
+    Accepting failure
+    Causing difficulty
+    Causing failure
+    Involving difficulty
+    Likely to fail
+    Resulting in failure
+    Unsuccessful people/things
+  Success
+    Achieving success
+    Acknowledging success
+    Ambition
+    Predicting success
+    Successful people
+    Successful things
+People
+  Education
+    Access to education
+    Degrees
+    Exams and assessment
+    In school
+    People in schools
+    School life
+    Subjects and courses
+    Teaching and learning
+    Types of school
+    Universities and colleges
+    University people
+  Family and relationships
+    Family background
+    Friends
+    Names
+    Relationships ending
+    Relatives
+    Romance
+  Feelings
+    Anger
+    Boredom
+    Disappointment
+    Disgust
+    Embarrassment
+    Excitement
+    Fear
+    Feelings in general
+    Happiness
+    Hate
+    Hunger
+    Loneliness
+    Love
+    Nervous
+    Showing interest
+    Surprise
+    Thirst
+    Tiredness
+    Unhappiness
+    Worry
+  Life stages
+    Adults
+    Babies
+    Birth
+    Death
+    Marriage
+    Old age
+    Pregnancy
+    Raising children
+    Youth
+  Personal qualities
+    Annoying
+    Brave
+    Clever
+    Confident
+    Cowardly
+    Dishonest
+    Energetic
+    Friendly
+    Honest
+    Immoral
+    Kind
+    Lazy
+    Moral
+    Proud
+    Selfish
+    Shy
+    Skills and qualities
+    Strange
+    Stupid
+    Unpleasant
+Politics and society
+  Crime and punishment
+    Committing crime
+    Criminals
+    Prison
+    Punishment
+    Solving crime
+    Types of crime
+  Law and justice
+    Justice
+    Legal documents
+    Legal processes
+    People in law
+    The law
+    The police
+  People in society
+    Belonging to society
+    Gender and sexuality
+    Race
+    Rank and status
+  Politics
+    Elections
+    Government
+    International relations
+    Parliament
+    Political views and systems
+    Politicians
+  Religion and festivals
+    Beliefs
+    God, angels, etc.
+    Holidays and celebrations
+    Not holy or religious
+    Religious ceremonies
+    Religious holidays and festivals
+    Religious items
+    Religious people
+    Religious places
+    Religious practices
+    Religious texts
+  Social issues
+    Drugs
+    Helping others
+    Migration
+    Poverty and famine
+    Protest
+    Social justice
+    Unemployment
+  War and conflict
+    Peacekeeping
+    Terrorism
+    The air force
+    The armed forces
+    The army
+    The navy
+    War
+    Weapons
+Science and technology
+  Biology
+    Biology
+    Genetics
+  Computers
+    Computer hardware
+    Computer problems
+    Computer programming
+    Computer software
+    Using a computer
+  Engineering
+    Branches of engineering
+    Electronics
+    How machines work
+    Machines and devices
+  Maths and measurement
+    Mathematical terminology
+    Measurements
+    Numbers
+    Types of mathematics
+  Physics and chemistry
+    Chemistry and chemicals
+    Energy and physical forces
+    Materials and properties
+    Molecules and matter
+  Scientific research
+    Branches of science
+    Data
+    Experiments
+    Results
+    Scientific equipment
+    Study
+Sport
+  Sports: ball and racket sports
+    American football
+    Ball sports in general
+    Baseball
+    Basketball
+    Cricket
+    Football
+    Golf
+    Other ball sports
+    Rugby
+    Tennis
+  Sports: other sports
+    Athletics
+    Combat sports
+    Cycling
+    Equine sports
+    Extreme sports
+    Other sports
+    Pool and snooker
+    Sports in general
+    Winter sports
+  Sports: water sports
+    Boating
+    Diving
+    Swimming
+    Water sports
+The natural world
+  Farming
+    Animal farming
+    Farm people
+    Growing crops
+    On the farm
+  Geography
+    Coastlines and the sea
+    Countries and continents
+    Describing geographic regions
+    Mountains and valleys
+    Other geographic features
+    Rivers and lakes
+  Plants and trees
+    Plants
+    Trees
+  The environment
+    Climate change
+    Conservation
+    Natural disasters
+    The power industry
+    Waste and pollution
+  Weather
+    Describing weather
+    Rain
+    Sky
+    Snow and ice
+    Temperature
+    The atmosphere
+    Wind
+Time and space
+  History
+    Events in history
+    Historical records
+    Objects in history
+    People in history
+    Periods in history
+    Studying history
+  Space
+    Space travel
+    The Earth and the atmosphere
+    The sun and the moon
+    The universe
+  Time
+    Dates
+    Days
+    Months
+    Time expressions
+    Time periods
+    Time zones
+    Times of day
+    Times of year
+Travel
+  Holidays
+    Camping
+    Holiday accommodation
+    Holidays in general
+    Staying in a hotel
+    The tourist industry
+    Types of holiday/vacation
+  Transport by air
+    Aircraft
+    Airports
+    Parts of a plane
+    People in air travel
+    Plane travel
+  Transport by bus and train
+    Railway tracks and stations
+    Train and bus travel
+    Trains
+  Transport by car or lorry
+    Controlling traffic
+    Driving
+    Motoring problems and accidents
+    On the road
+    Parts of a car
+    People in motoring
+    The car industry
+    Types of road
+    Types of vehicle
+  Transport by water
+    Parts of boats
+    People in sea travel
+    Travelling by boat
+    Types of boat
+Work and business
+  Business
+    Business deals
+    Business people
+    Manufacturing
+    Marketing
+    Running a business
+  Jobs
+    Describing jobs
+    Job titles
+    Jobs and professions
+  Money
+    Banking
+    Buying and selling
+    Economic trends
+    Finance
+    Gambling
+    Payments
+    The economy
+    Value
+  Working life
+    Business meetings
+    Describing work
+    Job interviews
+    Office life
+    Pay and conditions at work
