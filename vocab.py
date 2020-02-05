@@ -45,7 +45,7 @@ def get_topics(category):
         for m in PATTERN_SUBLIST.finditer(r.text[pos:p2 + 10]):
             sl = m.group(1)[len(BASE_URL):]
             sl = sl[sl.find('=') + 1:sl.rfind('_')]
-            topics[c]['sublists'][sl] = {'title': m.group(2).strip(), 'path': m.group(1)[len(BASE_URL):], 'vocabs': {}}
+            topics[c]['sublists'][sl] = {'title': m.group(2).strip(), 'path': m.group(1)[len(BASE_URL):], 'vocabs': []}
     CATEGORIES[category]['topics'] = topics
     for name, obj in CATEGORIES[category]['topics'].items():
         get_vocabs(category, name)
@@ -64,17 +64,23 @@ def get_vocabs(category, topic):
         if pos == -1:
             break
         m = PATTERN_VOCAB.findall(t[lpos:pos])[0]
-        print(m)
-        CATEGORIES[category]['topics'][topic]['sublists'][m[2]]['vocabs'] = {
+        CATEGORIES[category]['topics'][topic]['sublists'][m[2]]['vocabs'].append({
             'vocab': m[5],
             'type': m[6],
             'definition': m[4],
             'level': m[6]
-        }
+        })
         lpos = pos
 
 
 if __name__ == '__main__':
     get_categories()
-    print(CATEGORIES)
+    for cat_name, cat in CATEGORIES.items():
+        print(f'{cat_name}:')
+        for topic_name, topic in cat['topics'].items():
+            print(f'  {topic_name}:')
+            for sl_name, sl in topic['sublists'].items():
+                print(f'    {sl["title"]}:')
+                for vocab in sl['vocabs']:
+                    print(f'      {vocab["vocab"]}')
 
